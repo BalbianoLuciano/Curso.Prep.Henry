@@ -1,0 +1,11 @@
+
+	* Variables
+        Son aquellas porciones de dato donde podemos almacenar uno o más de los mismos, ej: colores = (almacenamos aquellos que le pertenezcan a la sentencia) rojo, verde, etc. 
+	* Strings
+        Tipo de dato en el que puede aparecer un codigo, generalmente se utilizan para mostrar mensajes en pantalla.
+	* Funciones (argumentos, `return`)
+        Son aquellas que se ultilizan para estructurar un desarrollo, ahorran codigo que puede ser reutilizados varias veces sin necesidad de escribirlos nuevamente, pueden recibir argumentos o no y siempre nos devuelven un dato.
+	* Declaraciones `if`
+        Sentencias para indicar al ordenador que hacer en cada linea consiguiente. 
+	* Valores booleanos (`true`, `false`)
+        Tipo de dato que representa la lógica de un variable, dato, etc.
