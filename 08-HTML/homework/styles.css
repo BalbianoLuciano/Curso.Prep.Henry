@@ -1,0 +1,41 @@
+.backgroundImage{
+    display: flex;
+    align-items: center ;
+    justify-items: center;
+    flex-direction: column;
+    background-image: url('https://salpimenta.com.ar/wp-content/uploads/2015/08/Fachada-Guerrin.jpg');
+    height: 100vh;
+    background-color: rgb(99, 138, 189);
+    margin: none;
+    
+    
+}
+.backgroundImage::after{
+    opacity: .4;
+}
+
+
+h1{
+    color: tan
+};
+
+#spanId{
+    display: flex;
+    font-size: 18px;
+    margin: 50px;
+};
+
+#thirdDiv{
+    display: flex;
+    width: 500px; 
+    height: 600px; 
+    color: steelblue; 
+    padding: 50px;
+    border: 50px;
+};
+
+.divClass{
+    background-color: coral;
+    display: flex;    
+}
+
