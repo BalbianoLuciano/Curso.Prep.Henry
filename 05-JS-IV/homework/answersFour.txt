@@ -1,0 +1,4 @@
+Objetos: Es una pieza de código que creamos para almacenar propiedades, sirve para ahorrar código posteriormente y podemos moldearlo de maneras que nos favorezca. Luego podemos llamar a estos objetos para interactuar con sus propiedades de una forma mas sencilla.
+Propiedades: Son aquellos atributos asignados a un objeto, por ej, para un objeto llamado "Auto", asignaríamos propiedados como su color su modelo o sus HP. Tambíen podríamos asignar una propiedad como "encender auto" que haga que este mismo encienda su motos.
+Métodos: se construyen para realizar acciones, ya sea dentro de un objeto o en una instancia del mismo. Que una ventana emergente aparezca, que una leta cambie su color, etc.
+Bucle "for in": 

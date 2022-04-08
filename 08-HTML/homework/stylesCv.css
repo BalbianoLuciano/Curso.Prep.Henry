@@ -1,0 +1,290 @@
+/*Curriculum*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+	position:relative;
+}
+.ir-arriba {
+	display:none;
+	padding:10px;
+	background:#a7ae4d;
+	font-size:20px;
+	color:#fff;
+	cursor:pointer;
+	position: fixed;
+	bottom:20px;
+	right:20px;
+    border-radius: 25%;
+}
+
+
+*{
+    font-family:'Poppins', sans-serif;;
+}
+
+body{
+    background-color: #f4e2cc;
+}
+
+/*NAV*/
+nav{
+    
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 80px;
+    transition: background-color 0.5 ease;
+    top: 0%;
+}
+
+.active{
+    background-color: #dde294;
+    transition: 1s;
+}
+
+.title{
+    position: relative;
+    display: inline-block;
+    align-self: center;
+    justify-self: flex-start;
+    width: 100px;
+    margin-left: 70px;
+    font-weight: 500;
+    color: black;
+}
+
+.navigation ul {
+    display: flex;
+    width: 1500px;
+    justify-content: flex-end;
+    align-items: center;
+    
+}
+.navigation ul li {
+    position: relative;
+    list-style: none;
+    width: 70px;
+    height: 70px;
+    z-index: 1;
+}
+
+.navigation ul li a{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    padding-right: 100px;
+}
+
+.navigation ul li a .icon{
+    position: relative;
+    display: block;
+    line-height: 75px;
+    font-size: 1.5em;
+    text-align: center;
+    color: black;
+    transition: 0.5s;
+}
+
+.navigation ul li:hover a .icon{
+    transform: translateY(-20px);
+}
+
+.navigation ul li a .text{
+    position: absolute;
+    color: black;
+    font-size: 0.75em;
+    transition: 0.5;
+    letter-spacing: 0.05em;
+    opacity: 0;
+}
+
+.navigation ul li:hover a .text{
+    opacity: 1;
+    transition: 1s;
+}
+
+
+
+
+
+/*Home*/
+
+h1{
+    display: block;
+    font-weight: 500;
+}
+h3{
+    font-weight: 400;
+}
+
+
+
+.home__img{
+    
+    width: 300px;
+}
+
+.img__img{
+    width: 200px;
+}
+
+.home__section{
+    gap: 1rem;
+}
+
+.grid__container{
+    display: grid;
+    grid-template-columns: 3fr 3fr;
+    align-items: center;
+    margin: 100px;
+}
+
+.home__img{
+    justify-self: start;
+    margin-left: 20px;
+}
+
+.home__data{
+    justify-self: end;
+    margin-right: 20px;
+}
+
+/*Description*/
+
+.span__description{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    padding-top: 100px;
+}
+
+.span__description h2{
+    font-weight: 500;
+}
+
+.span__description h4{
+    font-weight: 400;
+}
+
+.about__1{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    grid-column: 1/3;
+}
+.about__1 h2{
+    padding: 10px;
+}
+.about__1 h4{
+    padding: 10px;
+}
+.about__2{
+    grid-column: 1/2;
+    padding: 20px 50px 50px 50px;
+}
+
+.about__3{
+    width: 300px;
+    background-color: transparent;
+    grid-column: 2/3;
+    align-items: center;
+}
+.description__paragraph{
+    text-align: justify ;
+}
+
+
+/* Education */
+
+
+.grid__education{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    padding-top: 100px;
+}
+.education__one{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    grid-column: 1/3;
+}
+
+.education__one h2{
+    font-weight: 500;
+    padding: 10px;
+}
+
+.education__one h4{
+    font-weight: 400;
+    padding-bottom: 10px    ;
+}
+
+.education__two{
+    display: flex;
+    grid-column: 1/2;
+    height: 200px;
+    width: 100%;
+    align-items: flex-end;
+    flex-direction: column;
+    justify-content: center;
+    border-right: 2px solid;
+}
+.education__two h3{
+    padding: 10px;
+}
+.education__three{
+    grid-column: 2/3;
+    display: flex;
+    width: 100%;
+    height: 200px;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    border-left: 2px solid;
+
+}
+.education__three span{
+    padding: 10px;
+}
+
+/*Experiencia Laboral*/
+
+
+.flex__experience{
+    display: flex;
+    align-items: center;
+    height: 400px;
+    flex-direction: column;
+}
+
+.flex__experience h2{
+    font-weight: 500;
+    padding: 40px;
+}
+
+.flex__experience span{
+    width: 400px;
+    text-align: center;
+}
+
+.flex__experience a{
+    color: black;
+}
+
+.flex__experience a i{
+    width: 100px;
+    height: 100px;
+}
+

@@ -1,0 +1,1 @@
+Arrays: En otras palabras, un array es un lugar de almacenamiento de elementos, un campo vacío donde podemos almacenar objetos, esos objetos pueden ser de cualquier tipo y a su vez podemos interactuar con los mismos a través de funciones. Por ej, contar los elementos, ordenarlos, cambiarlos, sumar elemetos, quitar elementos, etc.
