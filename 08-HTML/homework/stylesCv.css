@@ -1,35 +1,28 @@
 /*Curriculum*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
 html{
     scroll-behavior: smooth;
 }
 body{
 	position:relative;
 }
-.ir-arriba {
-	display:none;
-	padding:10px;
-	background:#a7ae4d;
-	font-size:20px;
-	color:#fff;
-	cursor:pointer;
-	position: fixed;
-	bottom:20px;
-	right:20px;
-    border-radius: 25%;
-}
+
 
 
 *{
-    font-family:'Poppins', sans-serif;;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 body{
     background-color: #f4e2cc;
 }
 
-/*NAV*/
+/****************************************************NAV*****************************************************/
 nav{
     
     position: fixed;
@@ -116,26 +109,16 @@ nav{
 
 
 
-/*Home*/
+/*******************************************************Home*************************************************/
 
 h1{
     display: block;
-    font-weight: 500;
+    font-weight: 800;
 }
 h3{
     font-weight: 400;
 }
 
-
-
-.home__img{
-    
-    width: 300px;
-}
-
-.img__img{
-    width: 200px;
-}
 
 .home__section{
     gap: 1rem;
@@ -151,14 +134,21 @@ h3{
 .home__img{
     justify-self: start;
     margin-left: 20px;
+    width: 500px;
+    margin-top: 50px;
+}
+
+.img__img{
+    width: 200px;
 }
 
 .home__data{
     justify-self: end;
     margin-right: 20px;
+    font-size: 40px;
 }
 
-/*Description*/
+/*************************************************Description*************************************************/
 
 .span__description{
     display: grid;
@@ -194,17 +184,26 @@ h3{
 }
 
 .about__3{
-    width: 300px;
+    width: 270px;
     background-color: transparent;
     grid-column: 2/3;
     align-items: center;
+    justify-self: flex-start;
+    padding-bottom: 30px;
+    margin-left: 30px;
 }
+
+.about__3 img{
+    width: 400px;
+}
+
 .description__paragraph{
-    text-align: justify ;
+    text-align: right;
 }
 
 
-/* Education */
+
+/**************************************************Education**************************************************/
 
 
 .grid__education{
@@ -259,7 +258,29 @@ h3{
     padding: 10px;
 }
 
-/*Experiencia Laboral*/
+.diploma__description{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.diploma__description span{
+    padding: 20px;
+}
+
+
+.diploma__img{
+    width: 50px;
+    height: 50px;
+}
+.diploma__img:hover{
+    filter: opacity(0.4) drop-shadow(0 0 0 #a7ae4d);
+    transition: 0.5s;
+}
+
+/***********************************************Experiencia Laboral******************************************/
 
 
 .flex__experience{
@@ -267,11 +288,12 @@ h3{
     align-items: center;
     height: 400px;
     flex-direction: column;
+    padding-top: 100px;
 }
 
 .flex__experience h2{
     font-weight: 500;
-    padding: 40px;
+    padding: 20px;
 }
 
 .flex__experience span{
@@ -281,6 +303,11 @@ h3{
 
 .flex__experience a{
     color: black;
+    padding-top: 20px;
+}
+.flex__experience a:hover{
+    color: #a7ae4d;
+    transition: 0.5s;
 }
 
 .flex__experience a i{
@@ -288,3 +315,148 @@ h3{
     height: 100px;
 }
 
+
+/***************************************************Skills****************************************************/
+
+.grid__skills{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    width: 100%;
+    height: 800px;
+    justify-items: center;
+}
+
+.skills__items{
+    display: flex;
+    align-items: center;
+    grid-column: 1/5;
+    border-bottom: 1px solid;
+}
+
+p:last-child{
+    border-bottom: none;
+}
+
+.skills__items img{
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+
+.skills__items div{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    font-size: 20px;
+}
+.skills__items h4{
+    font-size: 30px;
+    padding: 10px;
+}
+
+.skills__items span{
+    font-weight: 800;
+}
+
+.skills__items b{
+    font-weight: 300;
+}
+
+.title__item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
+
+}
+
+/***************************************************Buttons****************************************************/
+
+.ir-arriba {
+	display:none;
+	padding:10px;
+	background:#a7ae4d;
+	font-size:20px;
+	color:#fff;
+	cursor:pointer;
+	position: fixed;
+	bottom:20px;
+	right:20px;
+    border-radius: 25%;
+}
+
+#media{
+	padding:10px;
+	background:#dde294;
+	font-size:20px;
+	color:#fff;
+	position: fixed;
+	left: 20px;
+    bottom: 50%;
+    border-radius: 50px;
+    flex-direction: column;
+}
+#media i{
+    color: #40422c;
+}
+#media a{
+    font-size: 25px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+#media i:hover{
+    color: #a5a5a5;
+    transition: 0.5s;
+}
+
+
+
+/************************************************** Hobbies *************************************************/
+
+.hobbies__description{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+.hobbies__description span{
+    text-align: center;
+    padding: 50px;
+    width: 500px;
+}
+
+/************************************************** Footer *************************************************/
+
+.copyright{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    background-color: #dde294;
+}
+
+.footer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 80px;
+    background-color: #dde294;
+}
+
+.footer a{
+    text-decoration: none;
+    color: #40422c;
+}
+.footer h2{
+    color: #40422c;
+}
+
+.footer a:hover{
+    color: #a5a5a5;
+    transition: 0.5s;
+}
